@@ -1,0 +1,30 @@
+#include <stdio.h> //required for initial function
+#include <math.h> //required for trig function and simple square root, square and more complex functions 
+#define M_pi 3.14159265358979323846
+
+int main (){
+	int p;
+	int q;
+	double degree;
+	
+	 printf ("Enter Value p:");
+	printf ("Enter value q:");
+	scanf ("%d",&q);
+	
+	printf ("Enter the Degree");
+	scanf ("%lf",&degree);
+		 double radian = degree *(M_pi/180);
+
+	// perform degrees to radians 
+	 
+	 //
+	 double cos_value = cos(radian);
+	 
+	double R = (p*p)+(q*q)+2*p*p*cos_value;
+	scanf ("%d",&p);
+	
+	double R2 = sqrt(R);
+	
+	printf ("R2 %.4f",R2);	
+	return 0;
+}
